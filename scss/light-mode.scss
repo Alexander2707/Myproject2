@@ -189,14 +189,15 @@ main {
     align-items: center;
 
     @media screen and (min-width: $--bp-tablet) {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
-.buttons button {
+.buttons button,
+.buttons a{
     width: 100%;
     padding: 10px 0;
     border: 2px solid var(--color-brand-normal);
@@ -207,9 +208,10 @@ main {
     outline: none;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
-.buttons button:first-child {
+.buttons a {
     margin-right: 10px;
     color: var(--color-brand-dark);
     background-color: transparent;
@@ -220,7 +222,7 @@ main {
     background-color: var(--color-brand-normal);
 }
 
-.buttons button:last-child {
+.buttons button {
     margin-right: 10px;
     color: #fff;
     background-color: var(--color-brand-normal);
